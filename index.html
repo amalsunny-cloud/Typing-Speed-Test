@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParroType - Typing Speed Tester</title>
+    <link rel="icon" href="images/parrotType-1.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="first">
+            <h6>ParroType</h6>
+            <img src="images\parrotType-1.png" alt="" width="40px">
+        </div>
+        <div class="second">
+
+        </div>
+       
+    </div>
+    <div class="container">
+        <div class="stats-container">
+            <div class="stat-box">
+                <div class="stat-value" id="wpm">0</div>
+                <div class="stat-label">Words Per Minute</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value" id="wordcount">0</div>
+                <div class="stat-label">Words Typed</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value" id="error">0</div>
+                <div class="stat-label">Errors</div>
+            </div>
+        </div>
+        
+        <div id="sentence"></div>
+        
+        <div class="input-area">
+            <div class="parrot-container">
+                <div class="parrot">
+                    <div class="parrot-tail"></div>
+                    <div class="parrot-body"></div>
+                    <div class="parrot-head"></div>
+                    <div class="parrot-wing"></div>
+                    <div class="parrot-eye">
+                        <div class="parrot-pupil"></div>
+                    </div>
+                    <div class="parrot-beರ"></div>
+                    
+                    <div class="parrot-beak"></div>
+                    <div class="parrot-leg leg-left"></div>
+                    <div class="parrot-leg leg-right"></div>
+                    <div class="parrot-branch"></div>
+                </div>
+            </div>
+            <textarea id="input" placeholder="Start typing the sentence above here..." aria-label="Typing input area" oncopy="return false" onpaste="return false"></textarea>
+        </div>
+        
+        <div class="controls">
+            <button id="restart" aria-label="Restart test">Restart Test</button>
+        </div>
+        
+        <div id="result"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
