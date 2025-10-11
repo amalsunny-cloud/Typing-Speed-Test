@@ -6,8 +6,12 @@
       "use": "@vercel/static"
     },
     {
-      "src": "app.ts",
-      "use": "@vercel/node"
+      "src": "style.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "images/**/*",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
