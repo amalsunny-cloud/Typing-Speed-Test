@@ -1,19 +1,11 @@
 {
   "version": 2,
   "buildCommand": "npm run build",
-  "outputDirectory": "./",
+  "outputDirectory": "dist",
   "routes": [
     {
       "src": "/(.*)",
       "dest": "/index.html"
-    },
-    {
-      "src": "/style.css",
-      "dest": "/style.css" 
-    },
-    {
-      "src": "/images/(.*)",
-      "dest": "/images/$1"  
     }
   ]
 }

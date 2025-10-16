@@ -4,9 +4,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# TypeScript Build Output (REGENERATED)
-index.html
-app.js
+# TypeScript Build Output
+dist/
 
 # Vercel
 .vercel/
