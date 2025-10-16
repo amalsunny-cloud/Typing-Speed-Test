@@ -1,8 +1,24 @@
 {
   "version": 2,
-  "buildCommand": "npm run build",
-  "outputDirectory": ".",
+  "builds": [
+    {
+      "src": "**/*",
+      "use": "@vercel/static"
+    }
+  ],
   "routes": [
+    {
+      "src": "/app.js",
+      "dest": "/app.js"
+    },
+    {
+      "src": "/style.css", 
+      "dest": "/style.css"
+    },
+    {
+      "src": "/images/(.*)",
+      "dest": "/images/$1"
+    },
     {
       "src": "/(.*)",
       "dest": "/index.html"

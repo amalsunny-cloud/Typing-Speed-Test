@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build":"echo 'Static site - no build needed'",
+    "build":"echo 'No build step needed for static site'",
     "dev": "npx serve ."
   },
   "keywords": [],
