@@ -2,7 +2,11 @@
   "version": 2,
   "builds": [
     {
-      "src": "index.html",
+      "src": "**/*.ts",
+      "use": "@vercel/typescript"     
+    },
+    {
+      "src": "index.html",           
       "use": "@vercel/static"
     },
     {
@@ -19,6 +23,5 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ],
-  "outputDirectory": "./"
+  ]
 }
